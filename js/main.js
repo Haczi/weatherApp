@@ -37,7 +37,7 @@ else if(status.id >=300 && status.id <=321){
     photo.setAttribute('src', '../img/drizzle.png')
 }
 else if(status.id >=600 && status.id <=622){
-    photo.setAttribute('src', 'https://github.com/Haczi/weatherApp/blob/main/img/ice.png')
+    photo.setAttribute('src', '../img/ice.png')
 }
 else if(status.id >=801 && status.id <=804){
     photo.setAttribute('src', '../img/cloud.png')
