@@ -28,28 +28,28 @@ temperature.textContent = Math.floor(temp) + '°C'
 humidity.textContent = hum + '%'
 
 if(status.id >=200 && status.id <=232){
-    photo.setAttribute('src', '../img/thunderstorm.png')
+    photo.setAttribute('src', 'http://openweathermap.org/img/wn/11d@2x.png')
 }
 else if(status.id >=500 && status.id <=531){
-    photo.setAttribute('src', '../img/rain.png')
+    photo.setAttribute('src', 'http://openweathermap.org/img/wn/10d@2x.png')
 }
 else if(status.id >=300 && status.id <=321){
-    photo.setAttribute('src', '../img/drizzle.png')
+    photo.setAttribute('src', 'http://openweathermap.org/img/wn/09d@2x.png')
 }
 else if(status.id >=600 && status.id <=622){
-    photo.setAttribute('src', '../img/ice.png')
+    photo.setAttribute('src', 'http://openweathermap.org/img/wn/13d@2x.png')
 }
 else if(status.id >=801 && status.id <=804){
-    photo.setAttribute('src', '../img/cloud.png')
+    photo.setAttribute('src', 'http://openweathermap.org/img/wn/03d@2x.png')
 }
 else if(status.id === 800){
-    photo.setAttribute('src', '../img/sun.png')
+    photo.setAttribute('src', 'http://openweathermap.org/img/wn/01d@2x.png')
 }
 else if(status.id === 701 || status.id === 741){
-    photo.setAttribute('src', '../img/fog.png')
+    photo.setAttribute('src', 'http://openweathermap.org/img/wn/50d@2x.png')
 }
 else{
-    photo.setAttribute('src', '../img/unknown.png')
+    photo.setAttribute('src', 'http://openweathermap.org/img/wn/02d@2x.png')
 }
 
 
