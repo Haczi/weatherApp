@@ -22,23 +22,26 @@ h1 {
 }
 
 input {
-    font-size: 16px;
+    font-size: 10px;
     padding: 5px 10px;
     margin-top: 10px;
     background: none;
     border: none;
     color: #fff;
     border-bottom: 2px solid #ddd;
+    width: 90%;
 }
 
 input::placeholder {
     color: #ddd;
     font-family: 'Montserrat', sans-serif;
+    
 }
 
 button {
     padding: 10px;
-    margin-left: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
     color: #fff;
     font-weight: bold;
     background: none;
@@ -54,11 +57,12 @@ button:hover {
 }
 
 .wrapper {
-    width: 800px;
-    padding: 20px 40px;
+    width: 40em;
+    // padding: 20px 40px;
     background-color: rgba(0, 0, 0, .8);
     border: 2px solid white;
     border-radius: 25px;
+    margin: 30px;
 }
 
 .top {
@@ -67,6 +71,9 @@ button:hover {
 
 .bottom {
     height: 140px;
+  
+    position: relative;
+    
 }
 
 .main-info {
@@ -74,45 +81,94 @@ button:hover {
     justify-content: space-around;
     align-items: center;
     height: 200px;
+    padding-left: 2rem;
 }
 
 .city-name {
-    font-size: 40px;
+    font-size: 30px;
+    padding-left: 1em;
 }
 
-.headings,
-.weather-info {
-    display: flex;
-    align-items: center;
-}
 
+.headings p{
+ padding-bottom: 1em;
+} 
+.weather-info p {
+    padding-bottom: .5em;
+}
 .headings p,
 .weather-info p {
     width: 33.3%;
     text-align: center;
+    padding-left: 2rem;
 }
 
 .headings {
     height: 35%;
     text-transform: uppercase;
-    font-weight: bold;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
+    position: absolute;
+    flex-direction: column;
+    font-size: 1.2rem;
 }
 
 .weather-info {
     height: 65%;
-    font-size: 26px;
+    font-size: 1.5rem;
+    position: absolute;
+    flex-direction: column;
+    left: 50%;
 }
 
 .photo {
-    width: 140px;
-    height: 140px;
-	object-fit: contain;
+    margin-left: 1em;
+    width: 120px;
+    
+    object-fit: contain;
 }
-
 .warning {
     margin-top: 10px;
     font-size: 14px;
     color: tomato;
+}
+
+@media (min-width:560px){
+    .photo {
+        width: 140px;
+        height: 140px;
+        margin-left: 0;
+    }
+    .weather-info {
+        height: 65%;
+        font-size: 26px;
+        position: unset;
+        flex-direction: unset;
+        left: 0;
+    }
+    .headings {
+        height: 35%;
+        text-transform: uppercase;
+        font-weight: bold;
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        position: unset;
+        flex-direction: unset;
+        font-size: 1.5rem;
+    }
+
+    .headings p,
+.weather-info p {
+    padding-left: 0;
+    padding-bottom: 0;
+}
+.headings,
+.weather-info {
+    display: flex;
+    align-items: center;
+}
+.wrapper {
+    padding: 20px 40px;
+}
+input{
+    font-size: 1.2rem;
+}
 }
